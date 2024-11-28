@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	body {
+		@apply font-primary text-base mx-auto font-normal;
+		// max-width: 1440px;
+	}
+	input {
+		@apply outline-none;
+	}
+}
+input:focus + .error-input {
+	display: none;
+}
